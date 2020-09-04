@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "voxelmappatch",
+  "version": "${version}",
+
+  "name": "VoxelMap Patch",
+  "description": "Fixes the occasional ArrayIndexOutOfBounds crash with VoxelMap.",
+  "authors": [
+    "The_Fireplace"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/voxelmap-patch",
+    "sources": "https://github.com/The-Fireplace-Minecraft-Mods/VoxelMap-Patch",
+    "issues": "https://github.com/The-Fireplace-Minecraft-Mods/VoxelMap-Patch/issues"
+  },
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/voxelmappatch/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "the_fireplace.vmp.VoxelMapPatch"
+    ]
+  },
+  "mixins": [
+    "voxelmappatch.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": ">=1.16",
+    "voxelmap": ">=1.10.10"
+  }
+}

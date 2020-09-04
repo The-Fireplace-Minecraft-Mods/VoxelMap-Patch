@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "the_fireplace.vmp.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MapChunkCacheMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
