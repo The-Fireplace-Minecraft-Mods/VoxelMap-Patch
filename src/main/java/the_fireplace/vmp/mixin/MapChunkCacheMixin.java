@@ -27,7 +27,6 @@ public abstract class MapChunkCacheMixin {
     private void isChunkSurroundedByLoaded(int chunkX, int chunkZ, CallbackInfoReturnable<Boolean> callbackInfo) {
         if (chunkX >= this.left && chunkX <= this.right && chunkZ >= this.top && chunkZ <= this.bottom
             && mapChunks.length <= (chunkX - this.left) + (chunkZ - this.top) * this.width) {
-            System.out.println("VoxelMap Crash Avoided");
             callbackInfo.setReturnValue(false);
         }
     }

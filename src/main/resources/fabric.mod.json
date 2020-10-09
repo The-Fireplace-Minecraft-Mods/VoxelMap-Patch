@@ -17,11 +17,8 @@
   "license": "GPL-3.0-or-later",
   "icon": "assets/voxelmappatch/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
-    "main": [
-      "the_fireplace.vmp.VoxelMapPatch"
-    ]
   },
   "mixins": [
     "voxelmappatch.mixins.json"
@@ -29,8 +26,7 @@
 
   "depends": {
     "fabricloader": ">=0.7.4",
-    "fabric": "*",
-    "minecraft": ">=1.16",
-    "voxelmap": ">=1.10.10"
+    "minecraft": "*",
+    "voxelmap": "*"
   }
 }
